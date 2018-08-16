@@ -21,4 +21,4 @@ def distr(players,deck):
 def game(cash,blind):
     dealer = cycle % n
     bank = blind*3
-    allin =
+    allin = set()

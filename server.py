@@ -5,6 +5,7 @@ n = int(input('кол-во игроков (целое положительное
 m = int(input('начальный банк каждого игрока: '))
 rise = int(input('через сколько кругов повышается блайнд?: '))
 conn,addr,cash = [0]*n,[0]*n,[m]*n
+deck = poker.newDeck()
 for i in range(n):
     sock.bind(("localhost", 8080+i))
     sock.listen(10)
